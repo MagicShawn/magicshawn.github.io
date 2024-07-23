@@ -2,7 +2,7 @@ title:              Sean's Blog
 email:              mgshawn.t@gmail.com
 description:        A Blog Theme by Start Bootstrap
 author:             mgshawn
-baseurl:            "/_posts"
+baseurl:            "/posts"
 url:                "https://magicshawn.github.io"
 
 # Social Profiles
