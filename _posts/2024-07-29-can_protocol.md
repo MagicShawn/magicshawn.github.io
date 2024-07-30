@@ -1,17 +1,12 @@
 ---
 layout: post
 title: "CAN协议"
-author: "mgshawn"
-header-mask: 0.4
-catalog:    true
 
 subtitle: "CAN协议基础"
-tags:
-  - CAN
-  - protocol
 date: 2024-07-29 22:15:13 -0400
 background: '/img/posts/05.jpg'
 ---
+
 
 # CAN协议
 
