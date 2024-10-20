@@ -10,7 +10,7 @@ background: '/img/posts/05.jpg'
 
 # CAN协议
 
-![CAN_Logo](./img/CAN_Logo.jpg)
+![CAN_Logo](/img/posts/page2/CAN_Logo.jpg)
 
 ***CAN（Controller Area Network）是一种串行通信协议，用于汽车和其他嵌入式系统中。CAN协议的特点是高可靠性、低延迟和易于扩展。CAN协议使用差分信号传输数据，通过差分信号的电平变化来表示数据位。***
 

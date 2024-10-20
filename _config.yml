@@ -1,6 +1,6 @@
 title:              Sean's Blog
 email:              mgshawn.t@gmail.com
-description:        A Blog Theme by Start Bootstrap
+description:        研究日常
 author:             mgshawn
 baseurl:            "/"
 url:                "https://magicshawn.github.io"
@@ -16,11 +16,11 @@ linkedin_username:
 google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
 
 # Build settings
-markdown:           GFM
+markdown:           kramdown
 paginate:           5
 paginate_path:      "/posts/page:num/"
 plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
-  - jekyll-responsive-images
+  - jekyll-responsive-image
