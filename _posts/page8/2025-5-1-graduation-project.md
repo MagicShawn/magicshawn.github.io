@@ -38,7 +38,7 @@ background: '/img/posts/03.jpg'
 ---
 
 
-## 一. 测试条件{#测试条件}
+## 一. 测试条件 {#测试条件}
 
 
 - **ROS版本 :** ***Noetic***
@@ -50,9 +50,9 @@ background: '/img/posts/03.jpg'
 
 --- 
 
-## 二. 项目结构{#项目结构}
+## 二. 项目结构 {#项目结构}
 
-### 1.文件夹结构{#文件夹结构}
+### 1.文件夹结构 {#文件夹结构}
 ***核心文件目录如下：***
 包含两个部分:
  - **graduation_slam_benchmark** : ***激光雷达建图定位算法,包含多种算法测试以及实际部署的代码与功能包***
@@ -80,9 +80,9 @@ background: '/img/posts/03.jpg'
 
 ```
 
-## 三. 项目部署{#项目部署}
+## 三. 项目部署 {#项目部署}
 
-### 1.仿真部分{#仿真部分}
+### 1.仿真部分 {#仿真部分}
 
 ***核心文件目录如下：***   
 
@@ -148,7 +148,7 @@ roslaunch fast_lio_localization localization_velodyne.launch
 ![slam_relocalization](/img/posts/page8/Relocalization.gif)
 
 
-### 2.实际部署部分{#实际部署部分}
+### 2.实际部署部分 {#实际部署部分}
 
 ***核心文件目录如下：***   
 ```bash
@@ -219,7 +219,7 @@ source devel/setup.bash && roslaunch fast_lio_sam mapping_velodyne16_lio_sam_par
 
 ---
 
-## 四. Some Reference{#reference}
+## 四. Some Reference {#reference}
 
 [***1.FAST-LIO-SAM仓库***](https://github.com/kahowang/FAST_LIO_SAM)
 [***2.重定位算法***](https://github.com/HViktorTsoi/FAST_LIO_LOCALIZATION)
