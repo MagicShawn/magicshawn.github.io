@@ -79,12 +79,13 @@ background: '/img/posts/03.jpg'
 │   └── src
 
 ```
+---
 
 ## 三. 项目部署 {#项目部署}
 
 ### 1.仿真部分 {#仿真部分}
 
-***核心文件目录如下：***   
+***核心文件目录如下：***  
 
 ```bash
 ./src
@@ -105,24 +106,26 @@ background: '/img/posts/03.jpg'
 #### 运行指令
 为方便实际运行常用的启动指令都写在对应ROS工作空间下的 ***/script*** 文件夹中
 
-***启动机器人人仿真***
+**启动机器人人仿真**
 ```bash
 roslaunch robot_description gazebo.launch
 ```
 
-***启动机器人控制***
+**启动机器人控制**
+
 此时机器人接受键盘控制
 ```bash
 # move control
 roslaunch robot_control velocity_controller.launch 
 ```
-***开启键盘控制***
-此时机器人接受键盘控制
+**开启键盘控制**
+
+键盘控制机器人移动
 ```bash
 # start to control robot by Keyboard
 rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ```
-***开启激光雷达建图***
+**开启激光雷达建图**
 ```bash
 #算法运行
 roslaunch fast_lio_sam mapping_solar_robot.launch
@@ -131,26 +134,28 @@ rosrun rviz rviz -d $(rospack find fast_lio_sam)/rviz_cfg/loam_livox.rviz
 
 ```
 
-***系统节点树***
+**系统节点树**
 ![system_node](/img/posts/page8/rosgraph.png){: width="720" }
 
-***实际效果演示***
+**实际效果演示**
 ![slam_result](/img/posts/page8/map_scans.gif){: width="720" }
 
 
-
 #### 重定位模块
-***开启重定位***
+
+**开启重定位**
 ```bash
 #reference
 roslaunch fast_lio_localization localization_velodyne.launch
 ```
 ![slam_relocalization](/img/posts/page8/Relocalization.gif){: width="720" }
 
+---
 
 ### 2.实际部署部分 {#实际部署部分}
 
-***核心文件目录如下：***   
+***核心文件目录如下：***  
+
 ```bash
 ./src/
 ├── data_perception # 数据处理
@@ -172,42 +177,43 @@ roslaunch fast_lio_localization localization_velodyne.launch
 
 ```
 #### 实际部署部分启动指令如下：
+
 为方便实际运行常用的启动指令都写在对应ROS工作空间下的 ***/script*** 文件夹中
 
-***一键启动脚本:***
+**一键启动脚本:**
+
 ***graduation_slam_benchmark*** 工作空间下的 ***/script*** 文件夹中
 ```bash
 ./script/start_slam_system.sh
-
 ```
 
-***GPS驱动***
+**GPS驱动**
 
 ```bash
 # 1. 启动 GPS 驱动节点
 source devel/setup.bash && roslaunch wheeltec_gps_driver wheeltec_nmea_driver.launch
 ```
 
-***AHRS驱动***
+**AHRS驱动**
 ```bash
 # 2. 启动 AHRS 驱动节点
 source devel/setup.bash && sudo chmod 666 /dev/ttyUSB0 && roslaunch fdilink_ahrs ahrs_data.launch
 ```
 
-***启动 PTP 时间同步服务***
+**启动 PTP 时间同步服务**
 ```bash
 # 3. 启动 PTP 时间同步服务（需要 sudo 权限）
 sudo ptp4l -m -4 -i eth0 -S
 ```
 
-***激光雷达驱动***
+**激光雷达驱动**
 ```bash
 # 4. 启动 Hesai 激光雷达驱动
 source devel/setup.bash && roslaunch hesai_lidar hesai_lidar.launch
 
 ```
 
-***FAST-LIO-SAM 算法***
+**FAST-LIO-SAM 算法**
 ```bash
 # 5. 启动 FAST-LIO-SAM 算法
 source devel/setup.bash && roslaunch fast_lio_sam mapping_velodyne16_lio_sam_parking_dataset.launch
