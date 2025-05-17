@@ -132,10 +132,10 @@ rosrun rviz rviz -d $(rospack find fast_lio_sam)/rviz_cfg/loam_livox.rviz
 ```
 
 ***系统节点树***
-![system_node](/img/posts/page8/rosgraph.png)
+![system_node](/img/posts/page8/rosgraph.png){: width="720" }
 
 ***实际效果演示***
-![slam_result](/img/posts/page8/map_scans.gif)
+![slam_result](/img/posts/page8/map_scans.gif){: width="720" }
 
 
 
@@ -145,7 +145,7 @@ rosrun rviz rviz -d $(rospack find fast_lio_sam)/rviz_cfg/loam_livox.rviz
 #reference
 roslaunch fast_lio_localization localization_velodyne.launch
 ```
-![slam_relocalization](/img/posts/page8/Relocalization.gif)
+![slam_relocalization](/img/posts/page8/Relocalization.gif){: width="720" }
 
 
 ### 2.实际部署部分 {#实际部署部分}
@@ -215,7 +215,7 @@ source devel/setup.bash && roslaunch fast_lio_sam mapping_velodyne16_lio_sam_par
 
 
 #### 效果演示:
-![slam-fact](/img/posts/page8/circle.gif)
+![slam-fact](/img/posts/page8/circle.gif){: width="720" }
 
 ---
 
