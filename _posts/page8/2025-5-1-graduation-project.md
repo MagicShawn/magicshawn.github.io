@@ -222,6 +222,9 @@ source devel/setup.bash && roslaunch fast_lio_sam mapping_velodyne16_lio_sam_par
 ## 四. Some Reference {#reference}
 
 [***1.FAST-LIO-SAM仓库***](https://github.com/kahowang/FAST_LIO_SAM)
+
 [***2.重定位算法***](https://github.com/HViktorTsoi/FAST_LIO_LOCALIZATION)
+
 [***3.RM仿真项目-pb_rm_simulation***](https://github.com/LihanChen2004/pb_rm_simulation)
+
 [***4.卡耐基梅隆-自主探索开发环境***](https://www.cmu-exploration.com/)

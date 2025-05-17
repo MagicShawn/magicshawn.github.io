@@ -45,7 +45,7 @@ background: '/img/posts/04.jpg'
 ---
 
 
-## 一. 测试条件{#1.测试条件}
+## 一. 测试条件 {#1.测试条件}
 
 
 - **系统 :** ***Ubuntu 18.04 DJI-manifold2-C***
@@ -54,12 +54,12 @@ background: '/img/posts/04.jpg'
 
 --- 
 
-## 二. 安装{#2.安装}
+## 二. 安装 {#2.安装}
 
 
-### 1.设备驱动安装{#1.1-驱动安装}
+### 1.设备驱动安装 {#1.1-驱动安装}
 
-#### 激光雷达驱动安装{#1.1.1激光雷达驱动安装}
+#### 激光雷达驱动安装 {#1.1.1激光雷达驱动安装}
 
 ```bash
     ...
@@ -91,7 +91,7 @@ background: '/img/posts/04.jpg'
 
 ```
 
-#### IMU驱动安装{#1.1.2IMU驱动}
+#### IMU驱动安装 {#1.1.2IMU驱动}
 
 **驱动下载:**
 [*惯导&GNSS/GPS模块资料*](https://pan.baidu.com/s/1vyT1Qqz5RC151n-E1nxggw)
@@ -106,7 +106,7 @@ background: '/img/posts/04.jpg'
 **详细安装步骤见：**
 [*轮趣IMU-N100 ROS驱动安装*](https://blog.csdn.net/qq_57061492/article/details/136722204?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ECtr-1-136722204-blog-124779753.235%5Ev43%5Epc_blog_bottom_relevance_base4&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ECtr-1-136722204-blog-124779753.235%5Ev43%5Epc_blog_bottom_relevance_base4&utm_relevant_index=2)
 
-### 2.LIO-SAM安装{#1.2LIO-SAM安装}
+### 2.LIO-SAM安装 {#1.2LIO-SAM安装}
 
 同样在 ***src/*** 目录下克隆仓库
 ```bash
@@ -122,7 +122,7 @@ background: '/img/posts/04.jpg'
 
 ## 三. 系统运行{#3.运行}
 
-### 1. 配置修改{#3.1配置修改}
+### 1. 配置修改 {#3.1配置修改}
 
 
 ```bash
@@ -130,7 +130,7 @@ background: '/img/posts/04.jpg'
     catkin_make
 ```
 
-### 2.传感器校准{#3.2传感器校准}
+### 2.传感器校准 {#3.2传感器校准}
 
 #### IMU校准：
 
